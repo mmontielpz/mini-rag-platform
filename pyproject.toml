@@ -1,0 +1,23 @@
+[project]
+name = "mini-rag-platform"
+version = "0.1.0"
+description = "A small production-style RAG demo built with Python, FastAPI, PostgreSQL, and pgvector."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_configs = true
+disallow_untyped_defs = false
